@@ -410,6 +410,10 @@ func init() {
 	go logging.flushDaemon()
 }
 
+func UpdateLogDirs(logDir string) {
+	updateLogDirs(logDir)
+}
+
 // Flush flushes all pending log I/O.
 func Flush() {
 	logging.lockAndFlushAll()

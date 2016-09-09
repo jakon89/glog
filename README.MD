@@ -1,3 +1,16 @@
+I've added possibility to update log dirs directly from application:
+
+```go
+func main() {
+	glog.UpdateLogDirs("/Users/jakon89")
+}
+```
+Please note that folder provided in `-log_dir` still work. `glog.UpdateLogDirs("/Users/jakon89")` only updated slice of target dirs.
+
+## Installation
+
+`go get github.com/jakon89/glog`
+
 glog
 ====
 
